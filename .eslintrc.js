@@ -18,12 +18,14 @@ module.exports = {
             "windows"
         ],
         "quotes": [
+            0,
             "error",
             "double"
         ],
         "semi": [
             "error",
             "always"
-        ]
+        ],
+        "no-console":[0],
     }
 };

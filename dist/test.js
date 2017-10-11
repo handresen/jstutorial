@@ -34,3 +34,10 @@ try {
         }
     }
 }
+
+var obj = { a: 7, b: 9 };
+var a = obj.a,
+    b = obj.b;
+
+
+console.log("a:" + a + " b:" + b);
