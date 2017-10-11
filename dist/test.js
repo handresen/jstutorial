@@ -41,3 +41,12 @@ var a = obj.a,
 
 
 console.log("a:" + a + " b:" + b);
+
+var o = {
+    name: "Håvard",
+    scream: function scream() {
+        return "Aaargh";
+    }
+};
+
+console.log(o.scream());

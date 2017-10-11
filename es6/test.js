@@ -18,3 +18,9 @@ const {a,b}= obj;
 
 console.log("a:"+a+" b:"+b);
 
+const o={
+    name:"Håvard",
+    scream() {return "Aaargh";}
+};
+
+console.log(o.scream());
