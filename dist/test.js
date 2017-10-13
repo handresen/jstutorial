@@ -50,3 +50,9 @@ var o = {
 };
 
 console.log(o.scream());
+
+var håvard = { name: "Håvard" };
+function greet(age, address) {
+    console.log("I am " + this.name + " aged " + age + " at " + address);
+}
+greet.call(håvard, 47);
