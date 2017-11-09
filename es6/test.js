@@ -2,6 +2,7 @@
 
 "use strict";
 
+
 const sentences=[
     { subject: "JavaScript", verb: "is", object: "great"},
     { subject: "Elephants", verb: "are", object: "large"}, 
@@ -96,5 +97,4 @@ const grouped=words.reduce((a,x)=>{
     a[x[0]].push(x);
     return a;},{});
 console.log("words.reduce : ",grouped);
-
 

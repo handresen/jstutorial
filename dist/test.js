@@ -118,5 +118,19 @@ for (var _i = 0; _i < _arr.length; _i++) {
 }
 
 console.log(cards.filter(function (a) {
-    return a.suit === 'H';
+    return a.suit == 'H';
 }));
+
+var a7 = [10, 11, 12, 13];
+var sum = a7.reduce(function (a, x) {
+    return a += x;
+}, 0);
+console.log("a7.reduce((a,x)=>a+=x,0) : ", sum);
+
+var words = ["Baseball", "Rodeo", "Angel", "Papya", "Uniform", "Joker", "Clover", "Bali", "Jekyll", "Unfit"];
+var grouped = words.reduce(function (a, x) {
+    if (!a[x[0]]) a[x[0]] = [];
+    a[x[0]].push(x);
+    return a;
+}, {});
+console.log("words.reduce : ", grouped);
